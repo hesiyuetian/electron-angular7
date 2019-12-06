@@ -16,7 +16,7 @@ declare var $
 })
 export class HomeComponent implements OnInit, OnDestroy {
     subServe: Subscription = new Subscription();
-    logoHome: string = CONFIG.logo || "../../../assets/images/bithumb.svg";
+    logoHome: string = CONFIG.logo || "./assets/images/bithumb.svg";
 
     /**
      * language

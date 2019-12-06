@@ -25,8 +25,8 @@ import {ConterAlertComponent} from '../alert/conter-alert/conter-alert.component
 
 export class HeaderComponent implements OnInit {
     theme: string = this.user.getItem('theme') || 'Light';
-    logo: string = CONFIG.logo || "../../../assets/images/logo-main.svg";
-    logoHome: string = CONFIG.logo || "../../../assets/images/bithumb.svg";
+    logo: string = CONFIG.logo || "./assets/images/logo-main.svg";
+    logoHome: string = CONFIG.logo || "./assets/images/bithumb.svg";
     routerLink: string = this.location.pathname;
     language: string;
     shouLanguage: boolean;

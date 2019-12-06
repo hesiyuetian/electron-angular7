@@ -49,7 +49,7 @@
                                 <h2>CPU</h2>
                                 <p class='user-center-con-left-item-ms'>{{reg.msChange(xtarScource.cpu.usableCpu)}} / {{reg.msChange(xtarScource.cpu.usableCpu)}}</p>
                                 <div class='chart f-center-x'>
-                                    <img class='f-center-x' src="../../../assets/images/cpu.svg" alt="">
+                                    <img class='f-center-x' src="./assets/images/cpu.svg" alt="">
                                     <app-slide [anima]='userInfoStatus' type='cpu' [rol]='cpuFlex'></app-slide>
                                 </div>
                                 <p class='user-center-con-left-item-line'>Staked： {{reg.xtarChange(xtarScource.cpu.cpuAmount)}} BT</p>
@@ -61,7 +61,7 @@
                                 <h2>NET</h2>
                                 <p class='user-center-con-left-item-ms'>{{reg.bitChange(xtarScource.net.usableNet)}} / {{reg.bitChange(xtarScource.net.usableNet)}}</p>
                                 <div class='chart f-center-x'>
-                                    <img class='f-center-x' src="../../../assets/images/net.svg" alt="">
+                                    <img class='f-center-x' src="./assets/images/net.svg" alt="">
                                     <app-slide [anima]='userInfoStatus' type='net' [rol]='netFlex'></app-slide>
                                 </div>
                                 <p class='user-center-con-left-item-line'>Staked：{{reg.xtarChange(xtarScource.net.netAmount)}} BT</p>
@@ -73,7 +73,7 @@
                                 <h2>RAM</h2>
                                 <p class='user-center-con-left-item-ms'>{{reg.bitChange(xtarScource.ram.totalReserved)}} / {{reg.bitChange(xtarScource.ram.totalRam)}}</p>
                                 <div class='chart f-center-x'>
-                                    <img class='f-center-x' src="../../../assets/images/pam.svg" alt="">
+                                    <img class='f-center-x' src="./assets/images/pam.svg" alt="">
                                     <app-slide [anima]='userInfoStatus' type='ram' [rol]='ramFlex'></app-slide>
                                 </div>
                                 <p class='user-center-con-left-item-line'>Used：{{reg.bitChange(xtarScource.ram.totalUsed)}}</p>
@@ -85,7 +85,7 @@
                             <div class='user-center-con-right-line f-cursor' (click)="copyAddress(accountInfo.address);$event.stopPropagation();">
                                 <h3 class='f-opacity'>{{accountInfo.name || ''}}</h3>
                                 <p class='f-opacity-k'>{{accountInfo.address || ''}}</p>
-                                <img *ngIf="user.prime()" src="../../../assets/images/vip.svg" alt="">
+                                <img *ngIf="user.prime()" src="./assets/images/vip.svg" alt="">
                                 <div class='user-center-con-right-line-register f-cursor' *ngIf="!user.prime()" (click)='registerPrime();$event.stopPropagation();'>{{'Header.registeredMember' | translate}}</div>
                                 <div class='user-center-con-right-line-hr'></div>
                             </div>
@@ -133,13 +133,13 @@
             <!-- 多语言-->
             <div class="nav-right-box nav-right-box2" (mouseover)="setLanguages('language', true)"
                 (mouseleave)="setLanguages('language', false)">
-                <i class=" guoqi" *ngIf="language == 'CN'"><img src="../../../assets/images/guoqi_cn.svg" /></i>
-                <i class=" guoqi" *ngIf="language == 'EN'"><img src="../../../assets/images/guoqi_en.svg" /></i>
+                <i class=" guoqi" *ngIf="language == 'CN'"><img src="./assets/images/guoqi_cn.svg" /></i>
+                <i class=" guoqi" *ngIf="language == 'EN'"><img src="./assets/images/guoqi_en.svg" /></i>
                 <!-- <span>{{language}}</span> -->
                 <i class="iconfont tubiao" [ngClass]="{'tubiao2': shouLanguage}">&#xe771;</i>
                 <ul *ngIf="shouLanguage">
-                    <li (click)="setLanguage('zh')"><i class=" guoqi2"><img src="../../../assets/images/guoqi_cn.svg" /></i>简体中文</li>
-                    <li (click)="setLanguage('en')"><i class=" guoqi2"><img src="../../../assets/images/guoqi_en.svg" /></i>English </li>
+                    <li (click)="setLanguage('zh')"><i class=" guoqi2"><img src="./assets/images/guoqi_cn.svg" /></i>简体中文</li>
+                    <li (click)="setLanguage('en')"><i class=" guoqi2"><img src="./assets/images/guoqi_en.svg" /></i>English </li>
                 </ul>
             </div>
         </div>

@@ -3,7 +3,7 @@
     <!-- head -->
     <div class="connect2-head">
         <div class="connect2-head-l" (click)="link('/')">
-            <a class="logo" ><img src="../../../../assets/images/bithumb.svg" /></a>
+            <a class="logo" ><img src="./assets/images/bithumb.svg" /></a>
         </div>
         <div class="connect2-head-r">
             <div>
@@ -11,13 +11,13 @@
             <!-- 多语言-->
             <div class="connect2-head-r-row" (mouseover)="setLanguages(true)"
                 (mouseleave)="setLanguages(false)">
-                <i class=" guoqi" *ngIf="language == 'CN'"><img src="../../../../assets/images/guoqi_cn.svg" /></i>
-                <i class=" guoqi" *ngIf="language == 'EN'"><img src="../../../../assets/images/guoqi_en.svg" /></i>
+                <i class=" guoqi" *ngIf="language == 'CN'"><img src="./assets/images/guoqi_cn.svg" /></i>
+                <i class=" guoqi" *ngIf="language == 'EN'"><img src="./assets/images/guoqi_en.svg" /></i>
                 <span>{{language}}</span>
                 <i class="iconfont tubiao" [ngClass]="{'tubiao2': shouLanguage}">&#xe771;</i>
                 <ul *ngIf="shouLanguage">
-                    <li (click)="setLanguage('zh')"><i class=" guoqi2"><img src="../../../../assets/images/guoqi_cn.svg" /></i>CN</li>
-                    <li (click)="setLanguage('en')"><i class=" guoqi2"><img src="../../../../assets/images/guoqi_en.svg" /></i>EN</li>
+                    <li (click)="setLanguage('zh')"><i class=" guoqi2"><img src="./assets/images/guoqi_cn.svg" /></i>CN</li>
+                    <li (click)="setLanguage('en')"><i class=" guoqi2"><img src="./assets/images/guoqi_en.svg" /></i>EN</li>
                 </ul>
             </div>
         </div>

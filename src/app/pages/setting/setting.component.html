@@ -23,14 +23,14 @@
             <div class="main-body-col1-l">{{'set.language' | translate}}</div>
             <div class="main-body-col1-r f-cursor">
                 <span>
-                    <i class="guoqi" *ngIf="language !== 'English'"><img src="../../../assets/images/guoqi_cn.svg" /></i>
-                    <i class="guoqi" *ngIf="language == 'English'"><img src="../../../assets/images/guoqi_en.svg" /></i>
+                    <i class="guoqi" *ngIf="language !== 'English'"><img src="./assets/images/guoqi_cn.svg" /></i>
+                    <i class="guoqi" *ngIf="language == 'English'"><img src="./assets/images/guoqi_en.svg" /></i>
                     {{language}}
                     <label class="iconfont" [ngClass]="{'iconfont1': languageStatus}">&#xe771;</label>
                 </span>
                 <ul *ngIf="languageStatus">
-                    <li (click)="selectContent('language', 'zh');$event.stopPropagation();"><i class="guoqi"><img src="../../../assets/images/guoqi_cn.svg" /></i><span>简体中文</span></li>
-                    <li (click)="selectContent('language', 'en');$event.stopPropagation();"><i class="guoqi"><img src="../../../assets/images/guoqi_en.svg" /></i><span>English</span></li>
+                    <li (click)="selectContent('language', 'zh');$event.stopPropagation();"><i class="guoqi"><img src="./assets/images/guoqi_cn.svg" /></i><span>简体中文</span></li>
+                    <li (click)="selectContent('language', 'en');$event.stopPropagation();"><i class="guoqi"><img src="./assets/images/guoqi_en.svg" /></i><span>English</span></li>
                 </ul>
             </div>
         </div>

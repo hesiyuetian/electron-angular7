@@ -9,9 +9,9 @@
             <!--<ng-container *ngIf='!isNewTrade'>-->
             <div class="sell-buy-center-depth" [ngStyle]="{'display': !isNewTrade ? 'block' : 'none'}">
                 <header class='head'>
-                    <span class='head-type' [ngClass]="{'acts': tradType == 'all'}" (click)='changeTradType("all")'> <img src="../../../../assets/images/all.svg" alt=""> </span>
-                    <span class='head-type' [ngClass]="{'acts': tradType == 'sell'}" (click)='changeTradType("sell")'> <img src="../../../../assets/images/sell.svg" alt=""> </span>
-                    <span class='head-type' [ngClass]="{'acts': tradType == 'buy'}" (click)='changeTradType("buy")'> <img src="../../../../assets/images/buy.svg" alt=""> </span>
+                    <span class='head-type' [ngClass]="{'acts': tradType == 'all'}" (click)='changeTradType("all")'> <img src="./assets/images/all.svg" alt=""> </span>
+                    <span class='head-type' [ngClass]="{'acts': tradType == 'sell'}" (click)='changeTradType("sell")'> <img src="./assets/images/sell.svg" alt=""> </span>
+                    <span class='head-type' [ngClass]="{'acts': tradType == 'buy'}" (click)='changeTradType("buy")'> <img src="./assets/images/buy.svg" alt=""> </span>
                     <span class='head-item head-shen f-fr f-cursor' id='depth-sel' tabIndex="22" (blur)='sleDepthFlag = false' (focus)='sleDepth()'>
                         <span class='head-item-selDepth'>
                             <span>

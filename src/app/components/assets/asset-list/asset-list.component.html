@@ -13,7 +13,7 @@
         <div class='assets-con'>
             <div class='assets-list f-cursor' *ngFor="let item of assetList;let ind = index" (click)='seeDeatil(item)'>
                 <div class='assets-list-item flex2'>
-                    <img *ngIf="!item.logo" src="../../../../assets/images/btc.svg" alt="">
+                    <img *ngIf="!item.logo" src="./assets/images/btc.svg" alt="">
                     <img  *ngIf="item.logo" [src]="item.logo" alt="">
 
                     <p class="assets-list-item-name" [id]="item.contractAddress">
@@ -52,7 +52,7 @@
         <div class='assets-sub-con border-box'>
             <header>
                 <img class='btc' *ngIf="symbolInfo.logo" [src]="symbolInfo.logo" alt="">
-                <img class='btc' *ngIf="!symbolInfo.logo" src="../../../../assets/images/btc.svg" alt="">
+                <img class='btc' *ngIf="!symbolInfo.logo" src="./assets/images/btc.svg" alt="">
                 <span>{{symbolInfo.name}} {{'assets.list.withdraw' | translate}}</span>
                 <i class='iconfont close f-cursor icon_style' (click)='sub_flag = false'>&#xe608;</i>
             </header>
@@ -163,7 +163,7 @@
         <div class='assets-sub-con border-box'>
             <header>
                 <img class='btc' *ngIf="symbolInfo.logo" [src]="symbolInfo.logo" alt="">
-                <img class='btc' *ngIf="!symbolInfo.logo" src="../../../../assets/images/btc.svg" alt="">
+                <img class='btc' *ngIf="!symbolInfo.logo" src="./assets/images/btc.svg" alt="">
                 <span class='f-opacity'>{{symbolInfo.name}} {{'assets.list.deposit' | translate}}</span>
                 <i class='iconfont close f-cursor icon_style' (click)='deoClose()'>&#xe608;</i>
             </header>
@@ -263,7 +263,7 @@
         <div class='assets-sub-con border-box detail'>
             <header>
                 <img class='btc' *ngIf="symbolInfo.logo" [src]="symbolInfo.logo" alt="">
-                <img class='btc' *ngIf="!symbolInfo.logo" src="../../../../assets/images/btc.svg" alt="">
+                <img class='btc' *ngIf="!symbolInfo.logo" src="./assets/images/btc.svg" alt="">
                 <span>{{symbolInfo.name}}（{{symbolInfo.symbol}}）{{'assets.list.detail' | translate}}</span>
                 <i class='iconfont close f-cursor icon_style' (click)='assetDetail = false'>&#xe608;</i>
             </header>
@@ -309,7 +309,7 @@
                     <div class='assets-sub-con-custodian-logo qcfd'>
                         <img class='assets-sub-con-custodian-logo-left f-fl' [src]="assetsDetail.custodian_logo" alt="">
                         <div class='assets-sub-con-custodian-logo-right f-fl'>
-                            <p>{{assetsDetail.custodian_name}} <img *ngIf="assetsDetail.custodian_verify" src="./../../../assets/images/stroke.svg" alt=""></p>
+                            <p>{{assetsDetail.custodian_name}} <img *ngIf="assetsDetail.custodian_verify" src="./assets/images/stroke.svg" alt=""></p>
                             <a [href]="assetsDetail.custodian_link" target="_blank">{{assetsDetail.custodian_link}}</a>
                         </div>
                     </div>

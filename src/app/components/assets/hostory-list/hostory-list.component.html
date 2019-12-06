@@ -49,10 +49,10 @@
 	<div class='assets-history-detail' *ngIf="isDetail">
 		<div class='assets-history-detail-zhan' (click)='isDetail = false'></div>
 		<div class='assets-history-detail-con border-box f-center'>
-			<!-- <img class='close f-cursor' (click)='isDetail = false' src="../../../../assets/images/close.svg" alt=""> -->
+			<!-- <img class='close f-cursor' (click)='isDetail = false' src="./assets/images/close.svg" alt=""> -->
 			<i class='iconfont close f-cursor icon_style' (click)='isDetail = false'>&#xe608;</i>
-			<img class='type f-center-x' *ngIf="detailType == 'deposit'" src="../../../../assets/images/deposit.png" alt="">
-			<img class='type f-center-x' *ngIf="detailType != 'deposit'" src="../../../../assets/images/withdraw.png" alt="">
+			<img class='type f-center-x' *ngIf="detailType == 'deposit'" src="./assets/images/deposit.png" alt="">
+			<img class='type f-center-x' *ngIf="detailType != 'deposit'" src="./assets/images/withdraw.png" alt="">
 			<p class='assets-history-detail-con-type f-opacity'>{{detailType == 'deposit' ? 'Deposit' : 'Withdraw'}}</p>
 			<div class='assets-history-detail-con-list'>
 				<span>{{'assets.history.amount' | translate}}</span>
