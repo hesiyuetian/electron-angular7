@@ -19,10 +19,13 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/favicon.png",
+              "src/logo@16.png",
               "src/favicon.icns",
-              "src/favicon.256x256.png",
-              "src/favicon.512x512.png"
+              "src/logo@32.png",
+              "src/logo@64.png",
+              "src/logo@128.png",
+              "src/logo@256.png",
+              "src/logo@512.png"
             ],
             "styles": [
               "src/styles.scss",
@@ -104,10 +107,13 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/favicon.png",
+              "src/logo@16.png",
               "src/favicon.icns",
-              "src/favicon.256x256.png",
-              "src/favicon.512x512.png"
+              "src/logo@32.png",
+              "src/logo@64.png",
+              "src/logo@128.png",
+              "src/logo@256.png",
+              "src/logo@512.png"
             ]
           }
         },
@@ -143,7 +149,7 @@
       }
     }
   },
-  "defaultProject": "angular-electron",
+  "defaultProject": "BT-DEX",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

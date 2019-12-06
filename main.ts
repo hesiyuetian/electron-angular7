@@ -13,8 +13,8 @@ function createWindow() {
 
   // Create the browser window.
   win = new BrowserWindow({
-    x: 0,
-    y: 0,
+    // x: 0,
+    // y: 0,
     width: size.width,
     height: size.height,
     minWidth: 1366,
@@ -41,9 +41,9 @@ function createWindow() {
     // win.loadURL(`file://${__dirname}/dist/index.html`);
   }
 
-  // if (serve) {
-    win.webContents.openDevTools();
-  // }
+  if (serve) {
+    // win.webContents.openDevTools();
+  }
 
   // Emitted when the window is closed.
   win.on('closed', () => {
